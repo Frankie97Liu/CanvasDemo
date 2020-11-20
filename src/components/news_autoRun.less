@@ -1,0 +1,81 @@
+  .news {
+    box-sizing: border-box;
+    width: 350px;
+    height: 160px;
+    padding: 10px;
+    background: rgba(17, 24, 50, 1);
+    margin-top: 30px;
+    //滚动条的样式
+    ::-webkit-scrollbar {
+      width: 0px !important;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      border-radius: 0px !important;
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background-color: #00c1ff !important;
+    }
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 0px !important;
+      background: #d8dbdf;
+    }
+  }
+  .macro {
+    height: 140px;
+    overflow-y: auto;
+    font-size: 13px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        height: 30px;
+        line-height: 30px;
+        color: #9bb7ef;
+        position: relative;
+        cursor: pointer;
+        .policies-line {
+          width: 100%;
+          height: 1px;
+          background: #72f2ff;
+          position: absolute;
+          bottom: 5px;
+          display: none;
+        }
+  
+        a {
+          color: #9bb7ef;
+        }
+  
+        a:hover {
+          color: #72f2ff;
+          .policies-line {
+            display: block;
+          }
+        }
+        .content {
+          width: 140px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+        }
+        .yearMonth {
+          position: absolute;
+          right: 10px;
+        }
+      }
+    }
+    .ant-row,
+    .ant-col {
+      height: 30px;
+      line-height: 30px;
+    }
+    .ant-col.ant-col-19 {
+      display: flex;
+      .region {
+        margin-right: 5px;
+      }
+    }  
+  }
